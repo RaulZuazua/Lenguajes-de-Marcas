@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curso id="2010/2011" ciclo="Administración de Sistemas Informáticos en Red">
+    <alumnos>
+        <alumno id="A000000001">
+            Dionisio Peña Fontevilla
+            <modulos>GBAD ISIO</modulos>
+        </alumno>
+        <alumno id="A000000002">
+            Marta González Rubio
+            <modulos>LMSGI GBAD ISIO PADR FUHA LEUP FOL</modulos>
+        </alumno>
+        <alumno id="A000000003">
+            Laura Iglesias Merchán
+            <modulos>LMSGI GBAD ISIO PADR FUHA LEUP FOL</modulos>
+        </alumno>
+    </alumnos>
+    <evaluacion id="primera">
+        <examen modulo="LMSGI" fecha="2010-10-29" criterio="60%">
+            <calificacion alumno="A000000001">7.35</calificacion>
+            <calificacion alumno="A000000002">8.50</calificacion>
+            <nopresentado alumno="A000000003"/>
+        </examen>
+        <examen modulo="LMSGI" fecha="2010-12-03" criterio="60%">
+            <calificacion alumno="A000000001">7.90</calificacion>
+            <calificacion alumno="A000000002">9.10</calificacion>
+            <calificacion alumno="A000000003">6.15</calificacion>
+        </examen>
+        <practica modulo="LMSGI" fecha="2010-11-19" criterio="30%">
+            <nopresentado alumno="A000000001" />
+            <calificacion alumno="A000000002">9.50</calificacion>
+            <nopresentado alumno="A000000003" />
+        </practica>
+        <examen modulo="GBAD" fecha="2010-12-08" criterio="65%">
+            <calificacion alumno="A000000001">6.30</calificacion>
+            <calificacion alumno="A000000002">9.15</calificacion>
+            <calificacion alumno="A000000003">7.45</calificacion>
+        </examen>
+        <trabajo modulo="GBAD" fecha="2010-11-24" criterio="20%">
+            <calificacion alumno="A000000001">7.90</calificacion>
+            <calificacion alumno="A000000002">9.50</calificacion>
+            <calificacion alumno="A000000001">6.20</calificacion>
+        </trabajo>
+    </evaluacion>
+</curso>

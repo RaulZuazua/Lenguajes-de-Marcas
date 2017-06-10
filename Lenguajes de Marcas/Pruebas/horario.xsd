@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    
+    <xs:element name="nombre" type="xs:string"/>
+    <xs:element name="profesor" type="xs:string"/>
+    
+    
+    
+    
+    <xs:element name="modulo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre" maxOccurs="1" minOccurs="1"/>
+                <xs:element ref="profesor" maxOccurs="1" minOccurs="1"/>
+                <xs:element ref="slot" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="codigo" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:ID">
+                        <xs:enumeration value="LMSGI"/>
+                        <xs:enumeration value="LEUP"/>
+                        <xs:enumeration value="FUHA"/>
+                        <xs:enumeration value="ISIO"/>
+                        <xs:enumeration value="PADR"/>
+                        <xs:enumeration value="GBAD"/>
+                        <xs:enumeration value="FOL"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+
+
+
+
+    <xs:element name="slot">
+        <xs:complexType>
+            <xs:attribute name="dia" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Lunes"/>
+                        <xs:enumeration value="Martes"/>
+                        <xs:enumeration value="Miércoles"/>
+                        <xs:enumeration value="Jueves"/>
+                        <xs:enumeration value="Viernes"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute ref="comienzo"  use="optional" ></xs:attribute>
+            <xs:attribute ref="tramo" use="optional" ></xs:attribute>
+            <xs:attribute ref="longitud" use="required" ></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <xs:attribute name="comienzo" type="xs:integer"/>
+    <xs:attribute name="longitud" type="xs:integer"/>
+    <xs:attribute name="tramo"  type="xs:integer"  />
+    
+
+    
+    <xs:element name="horario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="modulo" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="curso" use="required"/>
+            <xs:attribute ref="regimen" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    
+    <xs:attribute name="curso">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="1º"/>
+                <xs:enumeration value="2º"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    
+    
+    <xs:attribute name="regimen">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="matutino"/>
+                <xs:enumeration value="vespertino"></xs:enumeration>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    
+    
+</xs:schema>
+
+
+
+

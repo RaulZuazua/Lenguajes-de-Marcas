@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="alumnos.xsl"?>
+<alumnos>
+  <curso>Curso XML</curso>
+  
+  <alumno dni="9394949">
+    <nombre>Juan</nombre>
+    <apellidos> Palomo</apellidos>
+    <nota>9.7</nota>
+    <email>juan@hotmail.com</email>
+  </alumno>
+  
+  <alumno dni="9394942">
+    <nombre>Sandra</nombre>
+     <apellidos> Fernandez</apellidos>
+    <nota>6</nota>
+    <email>ssgg@gmail.es</email>
+  </alumno>
+
+  <alumno dni="9394922">
+    <nombre>Leonardo</nombre>
+     <apellidos>Dantés</apellidos>
+    <nota>3</nota>
+    <email>exitos@discos.com</email>
+  </alumno>
+  
+  <alumno dni="98765432">
+    <nombre>Diana</nombre>
+    <apellidos>Gutierrez</apellidos>
+    <nota>8</nota>
+    <email>diana@Alumnos.com</email>
+  </alumno>
+
+  <alumno dni="9394233">
+    <nombre>Luis</nombre>
+    <apellidos> Alvarez</apellidos>
+    <nota>4.7</nota>
+    <email>luis@educastur.es</email>
+  </alumno>
+
+  <alumno dni="23234454">
+    <nombre>Jose</nombre>
+      <apellidos>Estevez</apellidos>
+    <nota>5</nota>
+    <email>joest@terra.com</email>
+  </alumno>
+
+  <alumno dni="23233444">
+    <nombre>Antonio</nombre>
+     <apellidos>Enrique</apellidos>
+    <nota>8</nota>
+    <email>antoni@telecable.es</email>
+  </alumno>
+
+  <alumno dni="23231212">
+    <nombre>Marco</nombre>
+     <apellidos>López</apellidos>
+    <nota>9.7</nota>
+    <email>mm@alumnos.com</email>
+  </alumno>
+
+</alumnos>

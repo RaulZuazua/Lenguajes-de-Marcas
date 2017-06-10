@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ESCRUTINIO.xsl"?>
+<escrutinio_sitio>
+<num_a_elegir>135</num_a_elegir>
+<nombre_lugar>Parlamento</nombre_lugar>
+<nombre_disputado>escaños</nombre_disputado>
+<porciento_escrutado>100</porciento_escrutado>
+<nombre_sitio>Cataluña</nombre_sitio>
+<ts>1353889969</ts>
+<tipo_sitio>2</tipo_sitio>
+<votos>
+	<contabilizados>
+		<cantidad>3657450</cantidad>
+		<porcentaje>69.56</porcentaje>
+	</contabilizados>
+	<abstenciones>
+		<cantidad>1600510</cantidad>
+		<porcentaje>30.44</porcentaje>
+	</abstenciones>
+	<nulos>
+		<cantidad>32232</cantidad>
+		<porcentaje>0.88</porcentaje>
+	</nulos>
+	<blancos>
+		<cantidad>52899</cantidad>
+		<porcentaje>1.45</porcentaje>
+	</blancos>
+</votos>
+<resultados>
+	<numero_partidos>18</numero_partidos>
+	<partido>
+		<id_partido>6</id_partido>
+		<nombre>CiU</nombre>
+		<electos>50</electos>
+		<votos_numero>1112341</votos_numero>
+		<votos_porciento>30.68</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>7</id_partido>
+		<nombre>ERC-Cat Sí</nombre>
+		<electos>21</electos>
+		<votos_numero>496292</votos_numero>
+		<votos_porciento>13.68</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>25</id_partido>
+		<nombre>PSC</nombre>
+		<electos>20</electos>
+		<votos_numero>523333</votos_numero>
+		<votos_porciento>14.43</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>17</id_partido>
+		<nombre>PP</nombre>
+		<electos>19</electos>
+		<votos_numero>471197</votos_numero>
+		<votos_porciento>12.99</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>13</id_partido>
+		<nombre>ICV-EUiA</nombre>
+		<electos>13</electos>
+		<votos_numero>358857</votos_numero>
+		<votos_porciento>9.89</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>2</id_partido>
+		<nombre>C's</nombre>
+		<electos>9</electos>
+		<votos_numero>274925</votos_numero>
+		<votos_porciento>7.58</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>5</id_partido>
+		<nombre>CUP</nombre>
+		<electos>3</electos>
+		<votos_numero>126219</votos_numero>
+		<votos_porciento>3.48</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>26</id_partido>
+		<nombre>PxC</nombre>
+		<electos>0</electos>
+		<votos_numero>60142</votos_numero>
+		<votos_porciento>1.65</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>28</id_partido>
+		<nombre>SI</nombre>
+		<electos>0</electos>
+		<votos_numero>46608</votos_numero>
+		<votos_porciento>1.28</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>8</id_partido>
+		<nombre>Eb</nombre>
+		<electos>0</electos>
+		<votos_numero>27874</votos_numero>
+		<votos_porciento>0.76</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>18</id_partido>
+		<nombre>PACMA</nombre>
+		<electos>0</electos>
+		<votos_numero>20777</votos_numero>
+		<votos_porciento>0.57</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>22</id_partido>
+		<nombre>PIRATA.CAT</nombre>
+		<electos>0</electos>
+		<votos_numero>17942</votos_numero>
+		<votos_porciento>0.49</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>31</id_partido>
+		<nombre>UPyD</nombre>
+		<electos>0</electos>
+		<votos_numero>14552</votos_numero>
+		<votos_porciento>0.4</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>10</id_partido>
+		<nombre>FARTS.cat</nombre>
+		<electos>0</electos>
+		<votos_numero>11675</votos_numero>
+		<votos_porciento>0.32</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>32</id_partido>
+		<nombre>VD</nombre>
+		<electos>0</electos>
+		<votos_numero>5936</votos_numero>
+		<votos_porciento>0.16</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>30</id_partido>
+		<nombre>U.C.E.</nombre>
+		<electos>0</electos>
+		<votos_numero>2502</votos_numero>
+		<votos_porciento>0.06</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>24</id_partido>
+		<nombre>PRE-IR</nombre>
+		<electos>0</electos>
+		<votos_numero>815</votos_numero>
+		<votos_porciento>0.02</votos_porciento>
+	</partido>
+	<partido>
+		<id_partido>29</id_partido>
+		<nombre>SiR</nombre>
+		<electos>0</electos>
+		<votos_numero>332</votos_numero>
+		<votos_porciento>0</votos_porciento>
+	</partido>
+	</resultados>
+</escrutinio_sitio>

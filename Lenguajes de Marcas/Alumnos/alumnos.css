@@ -1,0 +1,16 @@
+body { color: green; }
+
+h1 { background: green; color: white; text-align: center; }
+
+table { 
+    border-collapse: collapse;
+    background: yellow; 
+    width: 50%; 
+    margin: auto;
+    border: 3px solid green; }
+    
+th { font-weight: bold;text-align:left; }
+
+td { border-top: 1px solid green;text-align: left; }
+
+td.suspenso { color: red; }

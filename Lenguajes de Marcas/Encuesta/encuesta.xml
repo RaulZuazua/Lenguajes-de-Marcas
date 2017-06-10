@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<encuesta>
+    <cuestion tipo='multiple'>
+        <pregunta>¿Conoces bien a "producto"?</pregunta>
+        <respuesta>Lo utilizo a diario</respuesta>
+        <respuesta>Lo he comprado ya varias veces</respuesta>
+        <respuesta>Lo conozco pero no lo utilizo</respuesta>
+        <respuesta>Nunca habia oido hablar de él</respuesta>
+    </cuestion>
+    <cuestion tipo='multiple'>
+        <pregunta>Si supieras que el precio de "producto" era "precio", cuánto pagarías más o menos por conseguirlo?</pregunta>
+        <respuesta>10-20% más</respuesta>
+        <respuesta>5-10% más</respuesta>
+        <respuesta>ni un centimo más</respuesta>
+        <respuesta>5-10% menos</respuesta>
+        <respuesta>10-20% menos</respuesta>
+        <respuesta completar="true">Otro, por favor indica el precio:</respuesta>
+    </cuestion>
+    <cuestion tipo='multiple2D'>
+        <pregunta>¿Cuántas unidades de "producto" más o menos comprarías teniendo en cuenta el aumento o reducción de su precio?</pregunta>
+        <respuesta>4+ menos</respuesta>
+        <respuesta>1-3 menos</respuesta>
+        <respuesta>1-3 más</respuesta>
+        <respuesta>4+ más</respuesta>
+    </cuestion>
+    <cuestion tipo='texto'>
+        <pregunta>¿Cuánto dinero estarías dispuesto a pagar por el "producto"?</pregunta>
+        <etiqueta>Indica el precio</etiqueta>
+    </cuestion>
+    <cuestion tipo='multiple' varias="true">
+        <pregunta>Aparte del producto, ¿qué otros factores te influyen en la decisión de compra?</pregunta>
+        <respuesta>Experiencia de otros clientes</respuesta>
+        <respuesta>Experiencia personal</respuesta>
+        <respuesta>Publicidad</respuesta>
+        <respuesta>Garantia</respuesta>
+        <respuesta>Embalaje</respuesta>
+        <respuesta>Tendencias</respuesta>
+        <respuesta completar="true">Otro (por favor descríbelo):</respuesta>
+    </cuestion>
+    <cuestion tipo='texto-largo'>
+        <pregunta>¿Qué es lo que más te gusta sobre el "producto"?</pregunta>
+    </cuestion>
+</encuesta>

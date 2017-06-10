@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    
+    <xs:element name="curso">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="alumnos" maxOccurs="unbounded" />
+                <xs:element ref="evaluacion" minOccurs="0"  maxOccurs="4"/>
+            </xs:sequence>
+            <xs:attribute name="id" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="\d{4}\/\d{4}" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="ciclo" use="required" fixed="Administración de Sistemas Informáticos en Red" />
+            <xs:attribute name="nivel" use="optional" >
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="1º" />
+                        <xs:enumeration value="2º" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element> 
+    
+    <xs:element name="alumnos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="alumno" minOccurs="3" maxOccurs="30" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="alumno">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="modulos" />
+            </xs:sequence>
+            <xs:attribute name="id" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A]\d{9}" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="modulos">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="LMSGI" />
+                <xs:enumeration value="GBAD" />
+                <xs:enumeration value="PADR" />
+                <xs:enumeration value="ISIO" />
+                <xs:enumeration value="FUHA" />
+                <xs:enumeration value="LEUP" />
+                <xs:enumeration value="FOL" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    
+    <xs:element name="evaluacion">
+        <xs:complexType>
+            <xs:sequence minOccurs="0" maxOccurs="7">
+                <xs:element ref="examen" maxOccurs="unbounded" />
+                <xs:element ref="practica" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element ref="trabajo" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute name="id" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="primera" />
+                        <xs:enumeration value="segunda" />
+                        <xs:enumeration value="tercera" />
+                        <xs:enumeration value="extraordinaria" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="examen">
+        <xs:complexType>
+                <xs:sequence minOccurs="3" maxOccurs="30">
+                    <xs:element ref="calificacion" minOccurs="1" maxOccurs="unbounded" />
+                    <xs:element ref="nopresentado" minOccurs="0" maxOccurs="unbounded" />
+                </xs:sequence>
+            <xs:attribute name="modulo" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="LMSGI" />
+                        <xs:enumeration value="GBAD" />
+                        <xs:enumeration value="PADR" />
+                        <xs:enumeration value="ISIO" />
+                        <xs:enumeration value="FUHA" />
+                        <xs:enumeration value="LEUP" />
+                        <xs:enumeration value="FOL" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="criterio" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="\d{1,2}\%"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="fecha" use="required" type="xs:date"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="practica">
+        <xs:complexType>
+            <xs:sequence minOccurs="3" maxOccurs="30">
+                <xs:element ref="calificacion" minOccurs="1" maxOccurs="unbounded" />
+                <xs:element ref="nopresentado" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute name="modulo" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="LMSGI" />
+                        <xs:enumeration value="GBAD" />
+                        <xs:enumeration value="PADR" />
+                        <xs:enumeration value="ISIO" />
+                        <xs:enumeration value="FUHA" />
+                        <xs:enumeration value="LEUP" />
+                        <xs:enumeration value="FOL" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="criterio" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="\d{1,2}%"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="fecha" use="required" type="xs:date"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="trabajo">
+        <xs:complexType>
+            <xs:sequence minOccurs="3" maxOccurs="30">
+                <xs:element ref="calificacion" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element ref="nopresentado" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute name="modulo" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="LMSGI" />
+                        <xs:enumeration value="GBAD" />
+                        <xs:enumeration value="PADR" />
+                        <xs:enumeration value="ISIO" />
+                        <xs:enumeration value="FUHA" />
+                        <xs:enumeration value="LEUP" />
+                        <xs:enumeration value="FOL" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="criterio" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="\d{1,2}%"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="fecha" use="required" type="xs:date"/>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <xs:element name="calificacion" >
+       <xs:simpleType>
+                <xs:restriction base="xs:decimal">
+                    <xs:minInclusive value="0" />
+                    <xs:maxInclusive value="10" />
+                    <xs:fractionDigits value="2" />
+                </xs:restriction>
+       </xs:simpleType>
+    </xs:element>
+    
+    <xs:element name="nopresentado">
+        <xs:complexType>
+            <xs:attribute name="alumno">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A]\d{9}" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    
+</xs:schema>

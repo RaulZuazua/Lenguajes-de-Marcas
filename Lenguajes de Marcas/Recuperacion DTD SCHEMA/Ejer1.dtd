@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT curso (alumnos,evaluacion) >
+<!ELEMENT alumnos (alumno+) >
+<!ELEMENT alumno (#PCDATA|modulos)* >
+<!ELEMENT modulos (#PCDATA) >
+<!ELEMENT evaluacion (examen+,practica*,examen*,trabajo*,examen*) >
+<!ELEMENT examen (calificacion*,nopresentado*) >
+<!ELEMENT practica (calificacion*,nopresentado*,calificacion+,nopresentado*) >
+<!ELEMENT trabajo (calificacion+) >
+<!ELEMENT calificacion (#PCDATA) >
+<!ELEMENT nopresentado EMPTY >
+
+<!ATTLIST curso id CDATA #REQUIRED >
+<!ATTLIST curso ciclo CDATA "Administración de Sistemas Informáticos en Red" >
+<!ATTLIST curso nivel (1|2) #IMPLIED >
+<!ATTLIST alumno id ID #REQUIRED >
+<!ATTLIST evaluacion id (primera|segunda|tercera|extraordinaria) #REQUIRED >
+<!ATTLIST examen modulo (LMSGI|GBAD|PADR|ISIO|FUHA|LEUP|FOL) #REQUIRED >
+<!ATTLIST practica modulo (LMSGI|GBAD|PADR|ISIO|FUHA|LEUP|FOL) #REQUIRED >
+<!ATTLIST trabajo modulo (LMSGI|GBAD|PADR|ISIO|FUHA|LEUP|FOL) #REQUIRED >
+<!ATTLIST examen fecha CDATA #REQUIRED >
+<!ATTLIST practica fecha CDATA #REQUIRED >
+<!ATTLIST trabajo fecha CDATA #REQUIRED >
+<!ATTLIST examen criterio CDATA #REQUIRED >
+<!ATTLIST practica criterio CDATA #REQUIRED >
+<!ATTLIST trabajo criterio CDATA #REQUIRED >
+<!ATTLIST calificacion alumno IDREF #REQUIRED >
+<!ATTLIST nopresentado alumno IDREF #REQUIRED >

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<horario curso="1º" regimen="vespertino">
+    <modulo codigo="LEUP">
+        <nombre>Lengua Extranjera para Uso Profesional</nombre>
+        <profesor>Luis</profesor>
+        <slot dia="Lunes" comienzo="1" longitud="1"/>
+        <slot dia="Miércoles" comienzo="1" longitud="1"/>
+    </modulo>
+    <modulo codigo="FUHA">
+        <nombre>Fundamentos de Hardware</nombre>
+        <profesor>Javier</profesor>
+        <slot dia="Lunes" comienzo="2" longitud="1"/>
+        <slot dia="Martes" comienzo="2" longitud="2"/>
+    </modulo>
+    <modulo codigo="ISIO">
+        <nombre>Implantación de Sistemas Operativos</nombre>
+        <profesor>Marco</profesor>
+        <slot dia="Lunes" comienzo="3" longitud="2"/>
+        <slot dia="Martes" comienzo="5" longitud="3"/>
+        <slot dia="Jueves" comienzo="3" longitud="2"/>
+    </modulo>
+    <modulo codigo="PADR">
+        <nombre>Planificación y Administración de Redes</nombre>
+        <profesor>Julio</profesor>
+        <slot dia="Lunes" comienzo="6" longitud="2"/>
+        <slot dia="Jueves" comienzo="1" longitud="2"/>
+        <slot dia="Viernes" comienzo="6" longitud="2"/>
+    </modulo>
+    <modulo codigo="GBAD">
+        <nombre>Gestión de Bases de Datos</nombre>
+        <profesor>Julio</profesor>
+        <slot dia="Martes" comienzo="1" longitud="1"/>
+        <slot dia="Miércoles" comienzo="6" longitud="2"/>
+        <slot dia="Viernes" comienzo="1" longitud="2"/>
+    </modulo>
+    <modulo codigo="FOL">
+        <nombre>Formación y Orientación Laboral</nombre>
+        <profesor>Juliana</profesor>
+        <slot dia="Miércoles" tramo="2" longitud="1"/>
+        <slot dia="Jueves" tramo="6" longitud="2"/>
+    </modulo>
+    <modulo codigo="LMSGI">
+        <nombre>Lenguajes de Marcas y Sistemas de Gestión de Información</nombre>
+        <profesor>Julio</profesor>
+        <slot dia="Miércoles" tramo="3" longitud="2"/>
+        <slot dia="Viernes" tramo="3" longitud="2"/>
+    </modulo>
+</horario>

@@ -1,0 +1,24 @@
+table {
+    border:solid yellow;
+    
+}
+
+td{
+    background:gray;
+    border:solid red;
+    text-align:left;
+    
+}
+
+
+div{
+    padding-left:40%;
+   
+}
+
+
+h1{
+    
+    color:blue;
+    text-align:center;
+}
